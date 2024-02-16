@@ -21,5 +21,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 subset_features = mice.data.iloc[:, :5]
-sns.pairplot(subset_features) 
+sns.pairplot(subset_features)
+plt.tight_layout()
+plt.savefig('first five column.png')
 plt.show()
